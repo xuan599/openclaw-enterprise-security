@@ -1,0 +1,55 @@
+{
+  "name": "@enterprise/openclaw-security-plugin",
+  "version": "0.2.0",
+  "description": "Enterprise security plugin for OpenClaw - default-deny policy, audit logging, data sensitivity routing, device pairing guard",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "openclaw",
+    "security",
+    "enterprise",
+    "audit",
+    "policy",
+    "data-sensitivity",
+    "compliance",
+    "device-pairing"
+  ],
+  "author": "OpenClaw Commercial Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuan599/openclaw-enterprise-security.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xuan599/openclaw-enterprise-security/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "micromatch": "^4.0.7",
+    "zod": "^3.23.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.3.28"
+  },
+  "devDependencies": {
+    "@types/micromatch": "^4.0.9",
+    "@types/node": "^25.5.2",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "openclaw": {
+    "type": "plugin",
+    "entry": "dist/index.js",
+    "displayName": "Enterprise Security",
+    "description": "Default-deny tool policy, audit logging, data sensitivity routing, and device pairing guard"
+  }
+}
