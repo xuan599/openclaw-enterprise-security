@@ -62,7 +62,17 @@ export class SensitivityRouter {
   private config: SensitivityConfig;
 
   constructor(userConfig: Partial<SensitivityConfig> = {}) {
-    this.config = { ...DEFAULT_CONFIG, ...userConfig };
+    this.config = {
+      ...DEFAULT_CONFIG,
+      ...userConfig,
+      // Preserve built-in patterns when user provides empty arrays (from zod defaults)
+      s3Patterns: userConfig.s3Patterns && userConfig.s3Patterns.length > 0
+        ? userConfig.s3Patterns
+        : DEFAULT_CONFIG.s3Patterns,
+      s2Patterns: userConfig.s2Patterns && userConfig.s2Patterns.length > 0
+        ? userConfig.s2Patterns
+        : DEFAULT_CONFIG.s2Patterns,
+    };
   }
 
   /**
