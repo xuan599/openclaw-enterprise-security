@@ -40,7 +40,7 @@
     "url": "https://github.com/xuan599/openclaw-enterprise-security/issues"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.14.0"
   },
   "dependencies": {
     "micromatch": "^4.0.7",
