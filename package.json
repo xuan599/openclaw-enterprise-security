@@ -4,6 +4,15 @@
   "description": "Enterprise security plugin for OpenClaw - default-deny policy, audit logging, data sensitivity routing, device pairing guard",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
