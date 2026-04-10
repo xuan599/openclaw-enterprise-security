@@ -6,7 +6,7 @@
 
 ```bash
 # 从 NPM 安装
-openclaw plugin add @enterprise/openclaw-security-plugin
+openclaw plugin add @xuan599/openclaw-security-plugin
 
 # 或从源码构建
 cd packages/openclaw-enterprise-security

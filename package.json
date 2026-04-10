@@ -1,5 +1,5 @@
 {
-  "name": "@enterprise/openclaw-security-plugin",
+  "name": "@xuan599/openclaw-security-plugin",
   "version": "0.2.0",
   "description": "Enterprise security plugin for OpenClaw - default-deny policy, audit logging, data sensitivity routing, device pairing guard",
   "main": "dist/index.js",
